@@ -8,4 +8,4 @@ Integrants:
 - 19100306 - Vidarte Rodriguez Alberto Leonel
 - 19300104 - Mejía Valenzuela André Thot
 - 19300100 - Gómez Breschi Emilio
-- 19100011 - Anaya Hernandez Alfredo Jordano
+- 19100011  - Anaya Hernandez Alfredo Jordano
