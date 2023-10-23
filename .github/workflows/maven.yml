@@ -28,10 +28,13 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven - Server
-      run: mvn -B package --file pom.xml
-      working-directory: ./cocochat.server
+      run: |
+        cd cocochat.server
+        mvn -B package --file pom.xml
     - name: Build with Maven - Client
-      run: mvn -B package --file pom.xml
+      run: |
+        cd cocochat.client
+        mvn -B package --file pom.xml
       working-directory: ./cocochat.client
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
