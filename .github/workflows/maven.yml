@@ -33,6 +33,7 @@ jobs:
         mvn -B package --file pom.xml
     - name: Build with Maven - Client
       run: |
+        cd ..
         cd cocochat.client
         mvn -B package --file pom.xml
       working-directory: ./cocochat.client
