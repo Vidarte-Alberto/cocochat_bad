@@ -29,10 +29,10 @@ jobs:
         cache: maven
     - name: Build with Maven - Server
       run: mvn -B package --file pom.xml
-      working-directory: cocochat.server
+      working-directory: ./cocochat.server
     - name: Build with Maven - Client
       run: mvn -B package --file pom.xml
-      working-directory: cocochat.client
+      working-directory: ./cocochat.client
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
